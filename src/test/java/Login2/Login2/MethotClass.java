@@ -29,7 +29,7 @@ public class MethotClass
 		driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		System.out.println(" collect url from excel sheet");
-		f2=new FileInputStream("/home/himanshu/eclipse-workspace/Login2/TestData/Czentrix_data.xls");
+		f2=new FileInputStream("TestData/Czentrix_data.xls");
         Hw=new HSSFWorkbook(f2);
 	    Hs=Hw.getSheet("Sheet3");
 	    excel_url=Hs.getRow(1).getCell(0).getStringCellValue();
